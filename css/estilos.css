@@ -6,6 +6,13 @@ body
 	/*background: #FFCC55;*/
 	color: white;
 }
+footer
+{
+	border: 1px solid orange;
+	font-weight: bold;
+	padding: 50px;
+	text-align: center;
+}
 header
 {
 	border: 1px solid black;
