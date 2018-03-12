@@ -78,9 +78,38 @@ header nav ul li
 	padding-right: 122px;
 	text-align: right;
 }
+#terceraseccion article
+{
+	display: inline-block;
+	margin-right: 4px;
+	vertical-align: top;
+	width: 23%
+}
+#terceraseccion article img
+{
+	/*Alineacion vertical de la imagen*/
+	vertical-align: middle;
+}
+#terceraseccion article input
+{
+	border-radius: 5px;
+}
+#terceraseccion article input[type="button"]
+{
+	background: #A4CD28;
+	color: white
+}
+.colorazul
+{
+	color: #629ad4
+}
 .colorrosa
 {
 	color: #FF0099;
+}
+.colorverde
+{
+	color: #8bc500;
 }
 .letragrande
 {
