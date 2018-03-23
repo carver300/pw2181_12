@@ -6,32 +6,64 @@ article
 	margin: 20px 5px;
 	padding: 15px;
 	text-align: center;
-	-o-transition: all 5s linear;
-	-webkit-transition: all 5s linear;
-	-moz-transition: all 5s linear;
-	-ms-transition: all 5s linear;
-	transition: all 5s linear;
+	-o-transition: all 100s linear;
+	-webkit-transition: all 100s linear;
+	-moz-transition: all 100s linear;
+	-ms-transition: all 100s linear;
+	transition: all 100s linear;
 	width: 400px;
 }
 article p
 {
 	font: 30px Tahoma;
 	font-weight: bold;
-	width: 100%
+	width: 100%;
 }
 /*article:hover
 {
 	height: 400px;
 	width: 800px;s
 }*/
+/*article:hover
+{
+	background: black;
+	color: greenyellow;
+	-o-transform: translate(150px,300px);
+	-webkit-transform: translate(150px,300px);
+	-moz-transform: translate(150px,300px);
+	-ms-transform: translate(150px,300px);
+	transform: translate(150px,300px);
+
+}*/
+/*article:hover
+{
+	background: black;
+	color: greenyellow;
+	-o-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+
+}*/
+/*article:hover
+{
+	background: black;
+	color: greenyellow;
+	-o-transform: scale(3.5);
+	-webkit-transform: scale(3.5);
+	-moz-transform: scale(3.5);
+	-ms-transform: scale(3.5);
+	transform: scale(3.5);
+}*/
 article:hover
 {
 	background: black;
-	color: greenyellow
-	-o-transform: translate(150px,300);
-	-webkit-transform: translate(150px,300);
-	-moz-transform: translate(150px,300);
-	-ms-transform: translate(150px,300);
-	transform: translate(150px,300);
+	color: greenyellow;
+	-o-transform: translate(150px,300px) rotate(359deg) scale(4.5) skew(-10deg,1deg);
+	-webkit-transform: translate(150px,300px) rotate(359deg) scale(4.5) skew(-10deg,1deg);
+	-moz-transform: translate(150px,300px) rotate(359deg) scale(4.5) skew(-10deg,1deg);
+	-ms-transform: translate(150px,300px) rotate(359deg) scale(4.5) skew(-10deg,1deg);
+	transform: translate(150px,300px) rotate(359deg) scale(4.5) skew(-10deg,1deg);
 
 }
