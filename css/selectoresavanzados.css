@@ -55,3 +55,50 @@ div p
 {
 	color: red;
 }
+/*Seleccionar solo el elemento <p>
+que esta inmediatamente despues del
+elemento <h2> - hermano adyacente*/
+h2 + p
+{
+	color: green;
+}
+/*Seleccioar todos lo elementos <p>
+del elemento especificado 
+-Hermano General*/
+h2 ~ p
+{
+	color: green;
+}
+/*Poner en color rojo el texto de las secciones menos el id="referencias"*/
+#resumen,#experimento,#pruebas,#resultados,#concluciones
+{
+	color: tomato;
+}
+section:not(#referencias)
+{
+	color: hotpink;
+}
+/*Impares*/
+li:nth-child(odd)
+{
+	color: green;
+}
+/*Pares*/
+li:nth-child(even)
+{
+	color: blue;
+}
+/*El quinto elemento*/
+li:nth-child(5)
+{
+	color: red;
+}
+/*El primer elemento de los ultimos*/
+li:nth-last-child(1)
+{
+	color: yellow;
+}
+p:first-line
+{
+	font-weight: bold;
+}
