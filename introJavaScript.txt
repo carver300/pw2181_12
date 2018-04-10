@@ -1,0 +1,202 @@
+var a,b = 6;
+undefined
+a
+undefined
+b
+6
+local-ntp.js:568 GET chrome-search://local-ntp/one-google.js net::ERR_FAILED
+init @ local-ntp.js:568
+var c = a+b;
+undefined
+c
+NaN
+c
+NaN
+c
+NaN
+var c = a + b;
+undefined
+c
+NaN
+c
+NaN
+c
+NaN
+alert('javscript es bueno');
+undefined
+var respuesta=prompt("dame un numero",0 );
+undefined
+respuesta
+"66"
+function suma(a,b){return a + b;}
+undefined
+suma
+ƒ suma(a,b){return a + b;}
+var sumaNumeros=function(a,b){return a + b;}
+undefined
+sumaNumeros
+ƒ (a,b){return a + b;}
+suma(9,8)
+17
+sumaNumeros(9,8)
+17
+docum
+VM319:1 Uncaught ReferenceError: docum is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM319:1
+document.write("<article id='demo'></article>");
+undefined
+document.getElementById('demo').innerHTML="mi article";
+"mi article"
+document.write("<input type='text' it='txt'>");
+undefined
+document.getElementById('txt').value=81;
+VM645:1 Uncaught TypeError: Cannot set property 'value' of null
+    at <anonymous>:1:37
+(anonymous) @ VM645:1
+document.getElementById('txt').value=81;
+VM647:1 Uncaught TypeError: Cannot set property 'value' of null
+    at <anonymous>:1:37
+(anonymous) @ VM647:1
+document.write("<input type='text' id='txt'>");
+undefined
+document.getElementById('txt').value=81;
+81
+document.write("<button>Da click aqui</button>");
+undefined
+document.write("<button onclick=alert(click)>Da click aqui</button>");
+undefinedvar a,b = 6;
+undefined
+a
+undefined
+b
+6
+local-ntp.js:568 GET chrome-search://local-ntp/one-google.js net::ERR_FAILED
+init @ local-ntp.js:568
+var c = a+b;
+undefined
+c
+NaN
+c
+NaN
+c
+NaN
+var c = a + b;
+undefined
+c
+NaN
+c
+NaN
+c
+NaN
+alert('javscript es bueno');
+undefined
+var respuesta=prompt("dame un numero",0 );
+undefined
+respuesta
+"66"
+function suma(a,b){return a + b;}
+undefined
+suma
+ƒ suma(a,b){return a + b;}
+var sumaNumeros=function(a,b){return a + b;}
+undefined
+sumaNumeros
+ƒ (a,b){return a + b;}
+suma(9,8)
+17
+sumaNumeros(9,8)
+17
+docum
+VM319:1 Uncaught ReferenceError: docum is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM319:1
+document.write("<article id='demo'></article>");
+undefined
+document.getElementById('demo').innerHTML="mi article";
+"mi article"
+document.write("<input type='text' it='txt'>");
+undefined
+document.getElementById('txt').value=81;
+VM645:1 Uncaught TypeError: Cannot set property 'value' of null
+    at <anonymous>:1:37
+(anonymous) @ VM645:1
+document.getElementById('txt').value=81;
+VM647:1 Uncaught TypeError: Cannot set property 'value' of null
+    at <anonymous>:1:37
+(anonymous) @ VM647:1
+document.write("<input type='text' id='txt'>");
+undefined
+document.getElementById('txt').value=81;
+81
+document.write("<button>Da click aqui</button>");
+undefined
+document.write("<button onclick=alert(click)>Da click aqui</button>");
+undefinedvar a,b = 6;
+undefined
+a
+undefined
+b
+6
+local-ntp.js:568 GET chrome-search://local-ntp/one-google.js net::ERR_FAILED
+init @ local-ntp.js:568
+var c = a+b;
+undefined
+c
+NaN
+c
+NaN
+c
+NaN
+var c = a + b;
+undefined
+c
+NaN
+c
+NaN
+c
+NaN
+alert('javscript es bueno');
+undefined
+var respuesta=prompt("dame un numero",0 );
+undefined
+respuesta
+"66"
+function suma(a,b){return a + b;}
+undefined
+suma
+ƒ suma(a,b){return a + b;}
+var sumaNumeros=function(a,b){return a + b;}
+undefined
+sumaNumeros
+ƒ (a,b){return a + b;}
+suma(9,8)
+17
+sumaNumeros(9,8)
+17
+docum
+VM319:1 Uncaught ReferenceError: docum is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM319:1
+document.write("<article id='demo'></article>");
+undefined
+document.getElementById('demo').innerHTML="mi article";
+"mi article"
+document.write("<input type='text' it='txt'>");
+undefined
+document.getElementById('txt').value=81;
+VM645:1 Uncaught TypeError: Cannot set property 'value' of null
+    at <anonymous>:1:37
+(anonymous) @ VM645:1
+document.getElementById('txt').value=81;
+VM647:1 Uncaught TypeError: Cannot set property 'value' of null
+    at <anonymous>:1:37
+(anonymous) @ VM647:1
+document.write("<input type='text' id='txt'>");
+undefined
+document.getElementById('txt').value=81;
+81
+document.write("<button>Da click aqui</button>");
+undefined
+document.write("<button onclick=alert(click)>Da click aqui</button>");
+undefined
