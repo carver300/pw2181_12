@@ -1,0 +1,18 @@
+body
+{
+	border: 1px solid blue;
+	font-size: 16px;
+	margin: 0 auto;
+	max-width: 1024px
+}
+header nav form
+{
+	float: right;
+	margin-right: 20px;
+	margin-top: -40px;
+}
+header nav form[type="button"]
+{
+	background: green;
+	border-radius: 1px solid green;
+}
