@@ -1,0 +1,115 @@
+body
+{
+
+	font-size: 16px; /*1em*/
+	margin: 0 auto;
+	max-width: 1600px; /*lo correcto seria 1024*/
+	min-width: 1099px;
+}
+header nav span
+{
+	float: right;
+	margin-top: 30px;
+	position: relative;
+}
+header nav ul li
+{
+	color: black;
+	display: inline-block;
+	float: right;
+	font-size: 1.3em;
+	margin-right: 15px;
+	margin-top: -10px;
+
+}
+header nav ul li:nth-child(6)
+{
+	color: pink;
+}
+footer ul li
+{
+	color: #dbdce0;
+	display: inline-block;
+	float: right;
+	font-size: 1.3em;
+	margin-right: 15px;
+	margin-top: -10px;
+
+}
+#span02footer
+{
+	display: inline-block;
+}
+#section01
+{
+	margin-top: 200px;
+}
+#section01 article 
+{
+	display: inline-block;
+	vertical-align: top;
+}
+#art01secc01 img
+{
+	border-radius: 300px;
+	float: left;
+	height: 600px;
+	width: 600px;
+	
+}
+#art01secc01 span
+{
+	text-align: left;
+	width: 50px;
+	display: block;
+}
+#art05secc02
+{
+	display: inline-block; 
+	width: 200px;
+}
+.redondo
+{
+	border-right: 150px;
+	height: 300px;
+	width: 300px;
+}
+.fondoAmarillo
+{
+	background: #f8ca43;
+}
+.fondoRosa
+{
+	background: #f89f97;
+}
+.fondoVerde
+{
+	background: #80bdb6;
+}
+.letraBlanca
+{
+	color: white;
+}
+.letraGrande
+{
+	font-size: 50px;
+}
+.letraRosa
+{
+	color: pink;
+}
+.redondo 
+{
+
+  border-radius: 125px;
+  display: inline-block;
+  height: 200px;
+  font-style: oblique;
+  font-weight: bold;
+  line-height: 175px;
+  margin-right: 25px;
+  width: 200px;
+  text-align: center;
+  vertical-align: middle;
+ 
+}
