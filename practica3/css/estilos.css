@@ -1,0 +1,170 @@
+body{
+	font-size: 16px;
+	margin: 0 auto;
+	width: 1310px;
+	background: white;
+}
+header{
+	border-bottom: 2px dashed;
+	padding-bottom: 37px;
+}
+#logoHeader{
+	width: 269px;
+	height: 73px;
+	margin: 40px 0px 0px 23px;
+}
+#logoHeader img{
+	width: 260px;
+	height: 65px;
+}
+#iconsHeader{
+	width: 135px;
+	height: 45px;
+	margin: -100px 0px 0px 1150px;
+}
+#iconsHeader img{
+	width: 40px;
+	height: 40px;
+}
+#goShopping{
+	width: 223px;
+	height: 80px;
+	margin: 10px 0px 0px 933px;
+}
+#goShopping img{
+	width: 215px;
+	height: 75px;
+}
+#artNav{	
+	display: inline-flex;
+}
+header article nav{
+	width: 710px;
+	height: 64px;	
+}
+header article article{
+	width:70px;
+	height:70px;
+	margin-left: 154px;	
+}
+header article article button{
+	border-radius: 50px;	
+}
+header article article button img{
+	width: 68px;
+	height: 68px;	
+	border-radius: 30px;
+	margin-top: 3px;
+}
+header article nav ul{
+	display: inline-flex;
+}
+header article nav ul li{
+	list-style: none;
+	margin-right: 10px;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+#Seccion01{
+	display: inline-flex;
+}
+#Art01Seccion01{
+	width:725px;
+}
+#subArt01Art01Seccion01{
+	border-bottom: 2px dashed;
+	width: 690px;
+	height: 200px;
+	margin: 34px 0px 0px 28px;
+}
+#spn01Secc01,#spn02Secc02{
+	font-size: 5em;
+	font-weight: bold;
+}
+#spn02Secc02{
+	color: green;
+}
+#subArt02Art01Seccion01{
+	width: 690px;
+	height: 72px;
+	text-align: center;
+	color: gray;
+	font-size: 1.2em;
+	margin: 54px 0px 0px 28px;
+}
+#subArt03Art01Seccion01{
+	width: 690px;
+	height: 237px;
+	margin: 55px 0px 0px 28px;
+}
+#subArt03Art01Seccion01 img{
+	width: 328px;
+	height: 233px;
+}
+#Art02Seccion01{
+	width: 567px;
+	height: 670px;
+}
+#subArt01Art02Seccion01{
+	width: 542px;
+	height: 637px;	
+}
+#subArt02Art02Seccion01{
+	width: 180px;
+	height: 100px;
+	margin: -130px 0px 0px 10px;	
+}
+#subArt01Art02Seccion01 img{
+	width: 538px;
+	height: 632px;	
+}
+#subArt02Art02Seccion01 img{
+	width: 172px;
+	height: 95px;	
+}
+#Art01Seccion02{
+	width: 820px;
+	height: 49px;
+	display: inline-flex;
+	margin: 80px 0px 0px 28px;
+}
+#spn01Secc02{
+	margin-top: 15px;
+	color: gray;
+	font-size: 1.1em;
+}
+#Art02Seccion02{
+	
+	display: inline-flex;
+	margin: 60px 0px 0px 28px;
+}
+#Art02Seccion02 span{
+	border-bottom: 1px solid gray;
+	color: gray;
+	font-size: 1.4em;
+	padding-bottom: 10px;
+}
+#subArt01Art02Seccion02{
+	width: 204px;
+}
+#subArt02Art02Seccion02{
+	width: 201px;
+}
+#subArt03Art02Seccion02{
+	width: 197px;
+}
+#subArt04Art02Seccion02{
+	width: 200px;
+}
+#subArt05Art02Seccion02{
+	width: 344px;
+}
+#Art02Seccion02 article{
+	text-align: center;
+}
+#Art02Seccion02 article ul li{
+	list-style: none;
+	color: gray;
+	margin-right: 30px;
+	font-size: 1.2em;
+}
