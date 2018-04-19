@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WebWorkers HTML5</title>
+</head>
+<body>
+	<marquee behavior="alternate" direction="down">
+		<p>Contar números <div id="resultado"></div></p>
+		<button onclick="iniciarWorker();">Iniciar</button>
+		<button onclick="pararWorker();">Detener</button>
+	</marquee>
+	<marquee behavior="scroll" direction="up">
+		<p>Contar números <div id="resultado2"></div></p>
+		<button onclick="iniciarWorker2();">Iniciar</button>
+		<button onclick="pararWorker2();">Detener</button>
+	</marquee>	
+	<script>
+		var wbWorker1,wbWorker2;
+		function iniciarWorker()
+		{
+			
+			//Preguntar si soporta worker
+			if (typeof(Worker) != "undefined")
+			{
+				if (typeof(wbWorker1) == "undefined")
+				{
+					wbWorker1 = new Worker("demoWorker.js");
+					wbWorker1.onmessage = function(event){
+						document.getElementById('resultado').innerHTML = event.data;
+					}
+					
+				}
+			}
+			else
+			{
+				alert("El navegador no soporta Workers");
+			}
+		}
+
+		function iniciarWorker2()
+		{
+				if (typeof(wbWorker2) == "undefined")
+				{
+					wbWorker2 = new Worker("demoWorker.js");
+					wbWorker2.onmessage = function(event){
+						document.getElementById('resultado2').innerHTML = event.data;
+					}
+					
+				}
+				else
+			{
+				alert("El navegador no soporta Workers");
+			}
+		}
+
+		function pararWorker()
+		{
+			wbWorker1.terminate();
+			wbWorker1 = undefined;
+		}
+		function pararWorker2()
+		{
+			wbWorker2.terminate();
+			wbWorker2 = undefined;
+		}
+	</script>
+</body>
+</html>
