@@ -12,7 +12,7 @@ var inicia = function()
 		    $("#foto").attr("src",data.results[0].picture.large);
 		  }
 		});
-		}
+	}
 	$("#btnNuevo").on("click",nuevo);
 }
 $(document).ready(inicia);

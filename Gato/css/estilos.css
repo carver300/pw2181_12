@@ -1,0 +1,116 @@
+body
+{
+	/*border: 1px solid blue;*/
+	font-size: 16px;
+	margin: 0 auto;
+	max-width: 1024px;
+	max-height: 800px;
+}
+img
+{
+	height: 50px;
+	width: 50px;
+}
+#seccionUno
+{
+	height: 150px;
+	width: 1024px;
+}
+#seccionUno #divTitulo
+{
+	border: 1px solid black;
+	border-radius: 5px;
+	text-align: center;
+	margin-top: 30px;
+	margin-left: 42.5%;
+	width: 150px;
+}
+#seccionUno span
+{
+	color: red;
+}
+#seccionUno button
+{
+	background: white;
+	border: 1px solid black;
+	border-radius: 5px;
+	color: red;
+	display: inline-block;
+	margin-top: 15px;
+	margin-left: 45%;
+	width: 100px;
+}
+#seccionUno #tablaTiempos
+{
+	float: right;
+}
+#tablaTiempos
+{
+	border: 1px solid black;
+	color: red;
+	text-align: right;
+	margin-right: 40px;
+}
+#tablaTiempos td,#tablaTiempos th
+{
+	border: 1px solid black;
+}
+#seccionDos
+{
+	/*border: 1px solid black;*/
+	display: inline-block;
+	height: 350px;
+	margin-top: 40px;
+	margin-left: 25%;
+	text-align: center;
+	width: 400px;
+
+}
+#seccionDos article
+{
+	height: 100px;
+	width: 100px;
+
+}
+#seccionDos div
+{
+	height: 100px;
+}
+#p11,#p12,#p13
+{
+	display: inline-block;
+	margin: 0 -4px;	
+}
+#p21,#p22,#p23
+{
+	display: inline-block;
+	margin: 0 -4px;	
+}
+#p31,#p32,#p33
+{
+	display: inline-block;
+	margin: 0 -4px;	
+}
+#seccionTres
+{
+	/*border: 1px solid blue;*/
+	display: inline-block;
+	height: 250px;
+	margin-top: 75px;
+	margin-left: 25px;
+	vertical-align: top;
+	width: 300px;
+}
+#divImagenes
+{
+	/*border: 1px solid green;*/
+}
+.rayasDeLosLados
+{
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+}
+.rayasDeAbajo
+{
+	border-bottom: 2px solid black;
+}

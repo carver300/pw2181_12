@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Juego Del Gato</title>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<script src="js/juegoGato.js"></script>
+	<script src="js/demoWorker.js"></script>
+	<section id="seccionUno">
+		<article id="articleDatos">
+			<div id="divTitulo">	
+				<span>
+					Juego Gato
+				</span>
+			</div>
+			<button id="#btnIniciar">Iniciar Juego</button>
+			<table id="tablaTiempos">
+				<tr>
+					<th>Tiempo Circulo</th>
+					<th>Tiempo Equis</th>
+				</tr>
+				<tr>
+					<td>
+						<p><div id="tiempoCirculo"></div>Segundos</p>
+					</td>
+					<td>
+						<p><div id="tiempoEquis"></div>Segundos</p>
+					</td>
+				</tr>
+			</table>
+		</article>
+	</section>
+	<section id="seccionDos" class="posicionamientoTablero">
+		<div id="primeraLinea" ondragover="allowDrop(event)" ondrop="drop(event)">
+			<article id="p11" class="rayasDeAbajo"></article>
+			<article id="p12" class="rayasDeLosLados rayasDeAbajo"></article>
+			<article id="p13" class="rayasDeAbajo"></article>
+		</div>
+		<div id="segundaLinea" ondragover="allowDrop(event)" ondrop="drop(event)">
+			<article id="p21" class="rayasDeAbajo"></article>
+			<article id="p22" class="rayasDeLosLados rayasDeAbajo"></article>
+			<article id="p23" class="rayasDeAbajo"></article>
+		</div>
+		<div id="terceraLinea" ondragover="allowDrop(event)" ondrop="drop(event)">
+			<article id="p31"></article>
+			<article id="p32" class="rayasDeLosLados"></article>
+			<article id="p33"></article>
+		</div>
+	</section>
+	<section id="seccionTres">
+		<p>Hola<div id="turnoDe"></div></p>
+		<div id="divImagenes" ondragover="allowDrop(event)" ondrop="drop(event)">
+			<img src="img/circulo.jpg" draggable="true" id="imagen1" ondragstart="drag(event)">
+			<img src="img/circulo.jpg" draggable="true" id="imagen2" ondragstart="drag(event)">
+			<img src="img/circulo.jpg" draggable="true" id="imagen3" ondragstart="drag(event)">
+			<img src="img/circulo.jpg" draggable="true" id="imagen4" ondragstart="drag(event)">
+			<img src="img/circulo.jpg" draggable="true" id="imagen5" ondragstart="drag(event)">
+			<img src="img/equis.jpg" draggable="true" id="imagen6" ondragstart="drag(event)">
+			<img src="img/equis.jpg" draggable="true" id="imagen7" ondragstart="drag(event)">
+			<img src="img/equis.jpg" draggable="true" id="imagen8" ondragstart="drag(event)">
+			<img src="img/equis.jpg" draggable="true" id="imagen9" ondragstart="drag(event)">
+			<img src="img/equis.jpg" draggable="true" id="imagen0" ondragstart="drag(event)">
+		</div>
+	</section>
+</body>
+</html>
