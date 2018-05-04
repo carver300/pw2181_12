@@ -19,6 +19,8 @@ function muestraPantallaPrincipal()
 		slashes: true
 
 	}));
+	//Clic derecho, inspeccionar en chrome o f12
+	//PantallaPrincipal.webContents.openDevTools();
 	PantallaPrincipal.show();
 }
 app.on('ready',muestraPantallaPrincipal);
