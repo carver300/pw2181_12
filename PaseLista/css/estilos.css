@@ -1,0 +1,28 @@
+body
+{
+	border: 1px solid blue;
+	font-size: 16px;
+	margin: 0 auto;
+	max-width: 1024px;
+	max-height: 800px;
+}
+section
+{
+    background: blue;
+    display: inline-block;
+    height: 200px;
+    margin-left: 42.5%;
+    margin-top: 42.5%;
+    width: 200px;
+
+}
+div
+{
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+button
+{
+    border-radius: 5px;
+    margin-top: 15px;
+}

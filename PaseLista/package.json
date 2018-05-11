@@ -1,0 +1,26 @@
+{
+  "name": "paselista",
+  "version": "1.0.0",
+  "description": "Pase de lista de alumnos",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Pase",
+    "lista",
+    "alumnos",
+    "usuarios",
+    "faltas",
+    "asistencias"
+  ],
+  "author": "Santiago Penunuri",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^2.0.0",
+    "electron-packager": "^12.0.2",
+    "electron-require": "^0.3.0",
+    "jquery": "^3.3.1"
+  }
+}
