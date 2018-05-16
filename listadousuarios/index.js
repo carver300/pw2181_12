@@ -9,7 +9,6 @@ const url = require('url');
 let pantallaDetalle;
 var usuarios = new Array(20);
 
-//Objeto global para compartir datos entre pantallas
 global.infoUsuarios = 
 {
 	nombre: '',
@@ -74,7 +73,7 @@ function botonDetalle()
 			protocol: 'file',
 			slashes: true
 		}
-	))
+	));
 	pantallaDetalle.webContents.openDevTools();
 	pantallaDetalle.show();
 

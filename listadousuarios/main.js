@@ -6,8 +6,45 @@ const path = require('path');
 //url de las paginas que se van a cargar
 const url = require('url');
 
+//Constantes para pdf
+const electron = require('electron');
+//Sistemas de archivos
+const fs = require('fs');
+//Acceso al sistema operativo
+const os = require('os');
+//Para declarar una funcion remota
+const ipc = electron.ipcMain;
+//Acceso a la terminal-linea de comandos
+const shell  = electron.shell;
+
 //Pantalla principal, let es una constante que cuando toma un valor ya no se puede cambiar
 let pantallaPrincipal;
+var usuarios = new Array(20);
+//Objeto global para compartir datos entre pantallas
+global.infoUsuarios = 
+{
+	nombre: '',
+	genero: '',
+	foto: '',
+	direccion: '',
+	telefono: ''
+}
+
+ipc.on('print-to-pdf',function(event)
+{
+	const pdfPath = path.join(os.tmpdir(),'print.pdf');
+	const win = BrowserWindow.fromWebContents(event.sender);
+	win.webContents.printToPDF({},function(error,data)
+		{
+			if(error)
+			{
+				throw error
+			}
+			shell.openExternal('file://'+pdfPath);
+			//win.close();
+		}
+	)
+});
 
 function muestraPantallaPrincipal()
 {
