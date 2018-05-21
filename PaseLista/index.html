@@ -4,33 +4,36 @@
     <meta charset="UTF-8">
     <title>Pase de lista</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 <body>
     <script>
-        //Manejador de eventos
-        require('js/index.js');
+       //Manejador de eventos
+       require('js/index.js');
     </script>
     <section id="section01">
-        <article>
+        <article id="artImagen">
+            <img id="imgLogo" src="img/LogoTecNM.png" alt="TecNM">
+        </article>         
+        <article id="secc01art01">
             <div>
-                <span>
+                <span class="colorLetras letraMediana">
                     Usuario
                 </span>
             </div>
-            <input type="text" placeholder="Usuario">
-        </article>
-        <article>
             <div>
-                <span>
+                <input type="text" placeholder="Usuario" size="35">
+            </div>
+            <div>
+                <span class="colorLetras letraMediana">
                     Contraseña
                 </span>
             </div>
-            <input type="password" placeholder="Contraseña">
-        </article>
-        <article>
+            <div>
+                <input type="password" placeholder="Contraseña" size="35">
+            </div>
             <button id="btnIngresar">Ingresar</button>
         </article>
-            
     </section>
 </body>
 </html>
