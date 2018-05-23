@@ -4,7 +4,7 @@ var inicioApp = function()
     {
         var usuario = $("#txtUsuario").val();
         var clave = $("#txtClave").val();
-        var pasametros = "opcion=validaentrada"+
+        var parametros = "opcion=validaentrada"+
                          "&usuario="+usuario+
                          "&clave="+clave+
                          "&aleatorio="+Math.random();
