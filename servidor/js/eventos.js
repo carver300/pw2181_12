@@ -17,7 +17,12 @@ var inicioApp = function()
             success: function(response)
             {
                 if (response.respuesta == true) {
-                    alert("Bienvenido");
+                    //Ocultamos el inicio
+                    $("#secInicio").hide("slow");
+                    //Aparecemos usuarios
+                    $("#frmUsuarios").show("slow");
+                    //Cursos en el primer cuadro de texto
+                    $("#txtNombreUsuario").focus();
                 }
                 else
                 {
@@ -31,6 +36,50 @@ var inicioApp = function()
             }
         });
     }
+
+    var teclaNombreUsuario = function(tecla)
+    {
+        if(tecla.which == 13)
+        {
+            buscarUsuario();
+        }
+    }
+
+    var buscarUsuario = function()
+    {
+        var usuario = $("#txtNombreUsuario").val();
+        var parametros = "opc=buscarUsuario"+
+                         "&usuario="+usuario+
+                         "&aleatorio="+Math.random();
+        if(usuario != "")
+        {
+            $.ajax({
+                cache:false,
+                type: "POST",
+                dataType: "json",
+                url: "php/buscarusuario.php",
+                data: parametros,
+                success: function(response)
+                {
+                    if (response.respuesta == true) {
+                       $("#txtNombre").val(response.nombre);
+                       $("#txtClaveUsuario").val(response.clave);
+
+                    }
+                    else
+                    {
+                        $("txtNombre").focus();
+                    }
+    
+                },
+                error: function(xhr,ajaxOptions,thrownError)
+                {
+    
+                }
+            });
+        }
+    }
+
     $("#btnAceptar").on("click",Aceptar);
 }
 
