@@ -3,37 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Pase de lista</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 <body>
     <script>
        //Manejador de eventos
-       require('./js/index.js');
+       require('./index.js');
     </script>
-    <section id="section01">
-        <article id="artImagen">
-            <img id="imgLogo" src="img/LogoTecNM.png" alt="TecNM">
-        </article>         
-        <article id="secc01art01">
-            <div>
-                <span class="colorLetras letraMediana">
-                    Usuario
-                </span>
-            </div>
-            <div>
-                <input type="text" placeholder="Usuario" size="35" id="usuario">
-            </div>
-            <div>
-                <span class="colorLetras letraMediana">
-                    Contraseña
-                </span>
-            </div>
-            <div>
-                <input type="password" placeholder="Contraseña" size="35" id="contraseña">
-            </div>
-            <button id="btnIngresar">Ingresar</button>
-        </article>
+    <section id="secInicio">
+        <img id="imgLogo" class="img-rounded" src="img/LogoTecNM.jpg" alt="TecNM"> <br>
+        Bienvenido! <br>
+        Porfavor, Ingrese sus datos <br>
+        <input type="text" id="txtUsuario" class="form-control" placeholder="Usuario">
+        <input type="password" id="txtClave" class="form-control" placeholder="Contraseña">
+        <button id="btnAceptar" class="btn btn-lg btn-primary btn-block">Aceptar</button>
     </section>
 </body>
 </html>

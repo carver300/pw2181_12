@@ -6,8 +6,42 @@ const path = require('path');
 //url de las paginas que se van a cargar
 const url = require('url');
 
+const electron = require('electron');
+const fs = require('fs')
+const os = require('os')
+
+const ipc = electron.ipcMain
+const shell = electron.shell
+
 //Pantalla principal, let es una constante que cuando toma un valor ya no se puede cambiar
 let pantallaPrincipal;
+
+global.datosUsuario =
+{
+    usuario: '',
+    usuarioValida: '',
+	periodo:'',
+	clave: '',
+	materia: '',
+    grupo: ''
+}
+ipc.on('print-to-pdf',function(event){
+	const pdfPath = path.join(os.tmpdir(),'print.pdf')
+	const win = BrowserWindow.fromWebContents(event.sender)
+	win.webContents.printToPDF({},function(error,data)
+	{
+		if(error) throw error
+		fs.writeFile(pdfPath,data,function(error)
+		{
+			if(error)
+			{ 
+				throw error
+			}
+			shell.openExternal('file://+pdfPath')
+
+		})
+	})
+})
 
 function muestraPantallaPrincipal()
 {
