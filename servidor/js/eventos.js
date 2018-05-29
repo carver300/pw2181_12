@@ -41,8 +41,10 @@ var inicioApp = function()
     {
         var usuario = $("#txtNombreUsuario").val();
         var nombre = $("#txtNombre").val();
+        var clave = $("#txtClaveUsuario").val();
         var parametros = "opc=guardarUsuario"+
                         "&usuario="+usuario+
+                        "&nombre="+nombre+
                         "&clave="+clave+
                         "&aleatorio="+Math.random();
         if(usuario != "" && nombre != "" && clave !="")
@@ -57,7 +59,7 @@ var inicioApp = function()
                 {
                     if (response.respuesta == true)
                     {
-
+                        $("#tblListado").append(response.tabla);
                     }
                 },
                 error: function(xhr,ajaxOptions,thrownError)
@@ -128,10 +130,44 @@ var inicioApp = function()
         }
     }
 
+    var Listado = function()
+    {
+        $("main > section").hide("slow");
+        $("#frmListado").show("slow");
+        
+        var parametros = "opc=listado"+
+                         "&aleatorio="+Math.random();
+
+        $.ajax({
+            cache:false,
+            type: "POST",
+            dataType: "json",
+            url: "php/listado.php",
+            data: parametros,
+            success: function(response)
+            {
+                if (response.respuesta == true) {
+                   
+
+                }
+                else
+                {
+                   alert("Ocurrio un error al ejecutar la consulta")
+                }
+
+            },
+            error: function(xhr,ajaxOptions,thrownError)
+            {
+
+            }
+        });
+    }
+
     $("#btnAceptar").on("click",Aceptar);
     $("#txtNombreUsuario").on("keypress",teclaNombreUsuario);
     $("#btnGuardar").on("click",Guardar);
     $("#btnBorrar").on("click",Borrar);
+    $("#btnListado").on("click",Listado);
 }
 
 
