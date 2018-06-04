@@ -45,7 +45,6 @@ var inicia = function()
                 
                 if (bRespuesta)
                 {
-                    alert(sUsuario);
                     require('electron').remote.getGlobal('datosUsuario').usuario = sUsuario;
                     require('electron').remote.getGlobal('datosUsuario').usuarioValida = data.usuariovalida;
                     require('electron').remote.getGlobal('datosUsuario').periodo = data.periodoactual;
@@ -60,6 +59,10 @@ var inicia = function()
 	            pantallaDetalle.webContents.openDevTools();
 	            pantallaDetalle.show();
 
+                }
+                else
+                {
+                    alert('Usuario o contraseña incorrectos');
                 }
            }
        });

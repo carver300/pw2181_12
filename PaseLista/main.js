@@ -25,6 +25,7 @@ global.datosUsuario =
 	materia: '',
     grupo: ''
 }
+
 ipc.on('print-to-pdf',function(event){
 	const pdfPath = path.join(os.tmpdir(),'print.pdf')
 	const win = BrowserWindow.fromWebContents(event.sender)
@@ -37,7 +38,8 @@ ipc.on('print-to-pdf',function(event){
 			{ 
 				throw error
 			}
-			shell.openExternal('file://+pdfPath')
+			shell.openExternal('file://'+pdfPath);
+			event.sender.send('wrote-pdf', pdfPath);
 
 		})
 	})
