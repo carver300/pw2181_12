@@ -9,7 +9,7 @@ function guardarusuario(){
 	$nombre = GetSQLValueString( $_GET["nombre"],"text");
 	$clavemateria=GetSQLValueString( $_GET["clavemateria"],"text");
     $grupo =GetSQLValueString($_GET["grupo"],"text");
-    $asistencias = GetSQLValueString($_GET["asistencias"],"int");
+    $faltas = GetSQLValueString($_GET["faltas"],"int");
 	echo "tomaeste valores";
 	
 	$con=conecta();
@@ -19,9 +19,9 @@ function guardarusuario(){
 	$consultaGuarda = "";
 	//si ya esxiste en la tabla el usuario
 	if(mysqli_num_rows($resConsulta) > 0){
-		$consultaGuarda= sprintf("update reportealumnos set asistencias = %u where ncontrol = %s and materia = %s",$asistencias,$numeroControl,$clavemateria);
+		$consultaGuarda= sprintf("update reportealumnos set faltas = %u where ncontrol = %s and materia = %s",$faltas,$numeroControl,$clavemateria);
 	}else{
-		$consultaGuarda = sprintf("insert into reportealumnos (identificador,periodo,ncontrol,nombre,materia,grupo,asistencias) values(default,%s,%s,%s,%s,%s,%u)",$periodo,$numeroControl,$nombre,$clavemateria,$grupo,$asistencias);
+		$consultaGuarda = sprintf("insert into reportealumnos (identificador,periodo,ncontrol,nombre,materia,grupo,faltas) values(default,%s,%s,%s,%s,%s,%u)",$periodo,$numeroControl,$nombre,$clavemateria,$grupo,$faltas);
 	}
 	echo $asistencias."/n";
 	echo $consultaGuarda;

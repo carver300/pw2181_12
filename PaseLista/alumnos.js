@@ -137,7 +137,7 @@ function asistenciasPorAlumno(usuario,usuarioValida,periodo,claveMateria,grupo,n
         type: "GET",
         dataType: "json",
         async: false,
-        url: 'http://localhost/apidelpenu/alumnoasistencias.php?periodo='+periodo+'&numerocontrol='+numeroControl+'&nombre='+nombre+'&clavemateria='+claveMateria+'&grupo='+grupo+'&asistencias='+asistencias+'&opc=guardarusuario',
+        url: 'http://localhost/servidor/alumnoasistencias.php?periodo='+periodo+'&numerocontrol='+numeroControl+'&nombre='+nombre+'&clavemateria='+claveMateria+'&grupo='+grupo+'&asistencias='+asistencias+'&opc=guardarusuario',
         success: function(data)
         {
             if (data.respuesta)
@@ -157,7 +157,7 @@ function asistenciasPorAlumno(usuario,usuarioValida,periodo,claveMateria,grupo,n
     })
 }
 
-function faltasPorAlumno(usuario,usuarioValida,periodo,claveMateria,grupo,numeroControl)
+function faltasPorAlumno(usuario,usuarioValida,periodo,claveMateria,grupo,numeroControl,nombre)
 {
     $.ajax({
         url:'http://itculiacan.edu.mx/dadm/apipaselista/data/cantidadfaltasalumno.php?usuario='+usuario+'&usuariovalida='+usuarioValida+'&periodoactual='+periodo+'&materia='+claveMateria+'&grupo='+grupo+'&ncontrol='+numeroControl,
@@ -176,6 +176,29 @@ function faltasPorAlumno(usuario,usuarioValida,periodo,claveMateria,grupo,numero
             }
         }
     });
+    $.ajax({
+        cache:false,
+        type: "GET",
+        dataType: "json",
+        async: false,
+        url: 'http://localhost/servidor/alumnofaltas.php?periodo='+periodo+'&numerocontrol='+numeroControl+'&nombre='+nombre+'&clavemateria='+claveMateria+'&grupo='+grupo+'&faltas='+faltas+'&opc=guardarusuario',
+        success: function(data)
+        {
+            if (data.respuesta)
+            {
+                alert('se guardo')
+                return true;
+            }
+            else
+            {
+                alert("Problema al guardar/actualizar los datos del alumno");
+            }
+        },
+        error: function(xhr,ajaxOptions,thrownError)
+        {
+
+        }
+    })
 }
 
 function faltaAsistencia()
